@@ -810,8 +810,8 @@
             margin: 0 0 18px;
         }
 
-        /* Skills — grouped as plain columns under About (Languages, Databases,
-       Frameworks, Tools, Foundations, Currently learning). */
+        /* Skills — grouped as plain columns under About (Programming Languages,
+       Web Development, Database, Core CS Subjects, Tools). */
         .skill-cols {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1048,6 +1048,14 @@
         .proj-body h3 {
             font-size: clamp(18px, 2.6vw, 21px);
             font-weight: 600;
+            margin: 0 0 14px;
+        }
+
+        /* Short project description under the title (from the resume). */
+        .proj-desc {
+            font-size: 13.5px;
+            color: var(--ink-soft);
+            line-height: 1.65;
             margin: 0 0 14px;
         }
 
@@ -1829,6 +1837,19 @@
         .code-detail-visit:hover {
             background: var(--moss);
             gap: 11px;
+        }
+
+        /* Code Profiles — icon-only row */
+        .code-icons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .code-icon {
+            width: 52px;
+            height: 52px;
+            font-size: 13px;
         }
 
         /* Sources modal */
@@ -2618,10 +2639,9 @@
                 <a href="#home"><span class="tag">01</span>Home</a>
                 <a href="#about"><span class="tag">02</span>About</a>
                 <a href="#projects"><span class="tag">03</span>Projects</a>
-                <a href="#certifications"><span class="tag">04</span>Credentials</a>
             </div>
             <div class="nav-actions">
-                <a class="resume-btn" href="https://drive.google.com/file/d/1EON2Pv6RbMOBRCCEr3WwlbO-duav-ay_/view?usp=sharing" target="_blank" rel="noopener"><span class="btn-optional">View </span>resume ↗</a>
+                <a class="resume-btn" href="https://drive.google.com/file/d/1g1PyKOzKSh7FzGqEbNAbZsjvjYQJb4vU/view?usp=sharing" target="_blank" rel="noopener"><span class="btn-optional">View </span>resume ↗</a>
                 <a class="nav-cta" href="#contact">Get in touch</a>
                 <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
                     <span></span><span></span><span></span>
@@ -2632,7 +2652,6 @@
             <a href="#home"><span class="tag">01</span>Home</a>
             <a href="#about"><span class="tag">02</span>About</a>
             <a href="#projects"><span class="tag">03</span>Projects</a>
-            <a href="#certifications"><span class="tag">04</span>Credentials</a>
             <a href="#contact" class="mobile-menu-cta">Get in touch</a>
         </div>
     </nav>
@@ -2676,25 +2695,41 @@
 
             <div class="marquee-group">
                 <span>Python</span>
-                <span>Java</span>
-                <span>C++</span>
-                <span>React</span>
-                <span>Node.js</span>
-                <span>PostgreSQL</span>
-                <span>Docker</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>SQL</span>
+                <span>Firebase Firestore</span>
                 <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Google Colab</span>
+                <span>Firebase</span>
+                <span>DSA</span>
+                <span>OS</span>
+                <span>Computer Networks</span>
+                <span>DBMS</span>
+                <span>OOP</span>
                 <span>From fundamentals to full-stack systems — always building something new</span>
             </div>
 
             <div class="marquee-group">
                 <span>Python</span>
-                <span>Java</span>
-                <span>C++</span>
-                <span>React</span>
-                <span>Node.js</span>
-                <span>PostgreSQL</span>
-                <span>Docker</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>SQL</span>
+                <span>Firebase Firestore</span>
                 <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Google Colab</span>
+                <span>Firebase</span>
+                <span>DSA</span>
+                <span>OS</span>
+                <span>Computer Networks</span>
+                <span>DBMS</span>
+                <span>OOP</span>
                 <span>Curious about how things work — focused on learning, building, and solving real problems</span>
             </div>
 
@@ -2702,7 +2737,7 @@
     </div>
 
     <div class="wrap stats">
-        <div class="stat stat-cgpa"><span class="cgpa-badge">6th Semester</span><b data-count="9.10" data-decimals="2">0</b><span>Current CGPA</span></div>
+        <div class="stat stat-cgpa"><span class="cgpa-badge">6th Semester</span><b data-count="9.12" data-decimals="2">0</b><span>Current CGPA</span></div>
         <div class="stat"><b data-count="6">0</b><span>Personal projects shipped</span></div>
         <div class="stat"><b data-count="4">0</b><span>Years of CS coursework</span></div>
         <div class="stat"><b data-count="2027">0</b><span>Expected graduation</span></div>
@@ -2715,7 +2750,7 @@
         <div class="about-grid">
             <div>
                 <p>I'm in my final year of a B.Tech in Computer Science at Vel Tech Rangarajan Dr. Sagunthala R&D Institute of
-                    Science and Technology, currently maintaining a 9.10 CGPA</span> through my 7th
+                    Science and Technology, currently maintaining a 9.12 CGPA</span> through my 7th
                     semester.</p>
                 <p>I care more about understanding why something works than just getting it to run — which usually means I end
                     up rebuilding a project a second time once I actually understand the problem.</p>
@@ -2723,7 +2758,7 @@
                     <div class="j-row"><span class="yr mono">2023–27</span>
                         <div>
                             <h4>B.Tech, Computer Science and Engineering</h4>
-                            <p>Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology. <span class="cgpa-mark">CGPA 9.10</span>.</p>
+                            <p>Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology. <span class="cgpa-mark">CGPA 9.12</span>.</p>
                         </div>
                     </div>
                     <div class="j-row"><span class="yr mono">2021–present</span>
@@ -2746,47 +2781,42 @@
                 </div>
             </div>
             <div>
+                <!-- Skills — taken from the resume's Technical Skills section -->
                 <div class="skill-cols">
                     <div>
-                        <h4>Languages</h4>
+                        <h4>Programming Languages</h4>
                         <ul>
                             <li>Python</li>
-                            <li>C++</li>
-                            <li>JavaScript / TypeScript</li>
+                            <li>JavaScript</li>
                         </ul>
-                        <h4>Databases</h4>
+                        <h4>Web Development</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <h4>Database</h4>
                         <ul>
                             <li>SQL</li>
-                            <li>SQLite</li>
-                            <li>MongoDB</li>
+                            <li>Firebase Firestore</li>
                         </ul>
-                        <h4>Frameworks</h4>
+                    </div>
+                    <div>
+                        <h4>Core CS Subjects</h4>
                         <ul>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>React.js</li>
+                            <li>Data Structures &amp; Algorithms (DSA)</li>
+                            <li>Operating Systems (OS)</li>
+                            <li>Computer Networks (CN)</li>
+                            <li>Database Management Systems (DBMS)</li>
+                            <li>Object-Oriented Programming (OOP)</li>
                         </ul>
                         <h4>Tools</h4>
                         <ul>
                             <li>Git &amp; GitHub</li>
                             <li>VS Code</li>
-                            <li>Docker</li>
-                            <li>Linux</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Foundations</h4>
-                        <ul>
-                            <li>Data structures &amp; algorithms</li>
-                            <li>Operating systems</li>
-                            <li>Databases</li>
-                            <li>Networking</li>
-                        </ul>
-                        <h4>Currently learning</h4>
-                        <ul>
-                            <li>MERN Stack</li>
-                            <li>AI/ML Concepts</li>
-                            <li>GATE Preparation</li>
+                            <li>Google Colab</li>
+                            <li>Firebase</li>
+                            <li>MS Word</li>
                         </ul>
                     </div>
                 </div>
@@ -2800,64 +2830,56 @@
             <span class="tag mono">(03)</span>
             <div>
                 <h2>Projects</h2>
-                <p class="sub">Personal builds — things I made because I wanted them to exist, not because a syllabus asked for
-                    them.</p>
+                <p class="sub">Things I built to understand how systems work — from graph algorithms to databases to IoT hardware.</p>
             </div>
         </div>
         <div class="proj-grid">
+
+            <!-- Project 1: from resume -->
             <div class="proj-card">
-                <div class="proj-media is-contain"><img src="https://res.cloudinary.com/dmqv8ubjb/image/upload/v1788947378/prototype-index.jpeg_klkj97.png" alt="Odor neutralizer breadboard prototype" loading="lazy"></div>
+                <div class="proj-media"></div>
                 <div class="proj-body">
-                    <div class="proj-meta"><span>Academic project · Patented</span><span>2026</span></div>
-                    <h3>Smart IoT-Based Odor Neutralizer System</h3>
-                    <div class="proj-tags"><span>ESP32</span><span>IoT</span><span>Embedded C</span><span>MQ-135</span></div>
+                    <div class="proj-meta"><span>Personal project</span><span>2025</span></div>
+                    <h3>Network Packet Routing Simulator</h3>
+                    <p class="proj-desc">A Python-based network routing simulator that models computer networks as graphs and finds optimal, minimum-cost paths. Implements Dijkstra's algorithm, BFS, and priority queues to simulate connection failures and determine alternative routes.</p>
+                    <div class="proj-tags"><span>Python</span><span>Dijkstra</span><span>BFS</span><span>Priority Queues</span><span>Graphs</span></div>
                     <div class="proj-links">
-                        <button type="button" class="proj-link" onclick="openOdorModal()">Sources</button>
-                        <a class="proj-link" href="https://github.com/tulasiram-vutukuri" target="_blank" rel="noopener">GitHub
-                            ↗</a>
+                        <!-- Replace with the exact repo URL from your resume's [GitHub] link -->
+                        <a class="proj-link" href="https://github.com/tulasiramvutukuri09/Network-Packet-Routing-Simulator" target="_blank" rel="noopener">GitHub ↗</a>
                     </div>
                 </div>
             </div>
 
+            <!-- Project 2: from resume -->
             <div class="proj-card">
                 <div class="proj-media"></div>
                 <div class="proj-body">
-                    <div class="proj-meta"><span>Personal project1</span><span>2025</span></div>
-                    <h3>Project name two</h3>
-                    <div class="proj-tags"><span>React</span><span>Node.js</span><span>WebSockets</span></div>
+                    <div class="proj-meta"><span>Personal project</span><span>2025</span></div>
+                    <h3>Library Circulation System</h3>
+                    <p class="proj-desc">A Python and MySQL-based console application to manage library books, member records, and circulation activities. Implements SQL queries and CRUD operations to handle book inventory, issue and return transactions, and database-driven record management.</p>
+                    <div class="proj-tags"><span>Python</span><span>MySQL</span><span>SQL</span><span>CRUD</span></div>
                     <div class="proj-links">
-                        <a class="proj-link" href="https://github.com/tulasiram-vutukuri" target="_blank" rel="noopener">Source
-                            ↗</a>
-                        <a class="proj-link" href="#" target="_blank" rel="noopener">Live ↗</a>
+                        <!-- Replace with the exact repo URL from your resume's [GitHub] link -->
+                        <a class="proj-link" href="https://github.com/tulasiramvutukuri09/Library-Circulation-System" target="_blank" rel="noopener">GitHub ↗</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Project 3: from resume (keeps the existing Sources modal) -->
             <div class="proj-card">
-                <div class="proj-media"></div>
+                <div class="proj-media is-contain"><img src="https://res.cloudinary.com/dmqv8ubjb/image/upload/v1788947378/prototype-index.jpeg_klkj97.png" alt="Odor neutralizer breadboard prototype" loading="lazy"></div>
                 <div class="proj-body">
-                    <div class="proj-meta"><span>Personal project</span><span>2024</span></div>
-                    <h3>Project name three</h3>
-                    <div class="proj-tags"><span>Machine Learning</span><span>Pandas</span></div>
+                    <div class="proj-meta"><span>Academic project · Patented</span><span>2026</span></div>
+                    <h3>Adaptive Smart Odor Neutralization System with Environmental Calibration</h3>
+                    <p class="proj-desc">An IoT-based air quality monitoring and odor neutralization system using gas sensors, adaptive temperature and humidity calibration, automated airflow control, and real-time environmental monitoring.</p>
+                    <div class="proj-tags"><span>ESP32</span><span>IoT</span><span>Embedded C</span><span>MQ-135</span></div>
                     <div class="proj-links">
-                        <a class="proj-link" href="https://github.com/tulasiram-vutukuri" target="_blank" rel="noopener">Source
-                            ↗</a>
-                        <a class="proj-link" href="#" target="_blank" rel="noopener">Live ↗</a>
+                        <button type="button" class="proj-link" onclick="openOdorModal()">Sources</button>
+                        <a class="proj-link" href="https://github.com/tulasiramvutukuri09/smart-odor-neutralizer" target="_blank" rel="noopener">GitHub ↗</a>
                     </div>
                 </div>
             </div>
-            <div class="proj-card">
-                <div class="proj-media"></div>
-                <div class="proj-body">
-                    <div class="proj-meta"><span>Personal project</span><span>2024</span></div>
-                    <h3>Project name four</h3>
-                    <div class="proj-tags"><span>C++</span><span>Algorithms</span></div>
-                    <div class="proj-links">
-                        <a class="proj-link" href="https://github.com/tulasiram-vutukuri" target="_blank" rel="noopener">Source
-                            ↗</a>
-                        <a class="proj-link" href="#" target="_blank" rel="noopener">Live ↗</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
 
@@ -2906,145 +2928,16 @@
             </div>
         </div>
 
-        <div class="code-panel" data-code-panel>
-
-            <!-- LEFT: CODE PROFILES -->
-            <div class="code-list" role="tablist" aria-label="Code practice platforms">
-
-                <div class="code-list-indicator" aria-hidden="true"></div>
-
-                <!-- LEETCODE -->
-                <button class="code-row is-active" type="button" role="tab" aria-selected="true" data-platform="LeetCode" data-handle="tulasiram_vutukuri" data-url="https://leetcode.com/u/tulasiram_vutukuri/" data-solved="81" data-easy="42" data-medium="32" data-hard="7">
-
-                    <span class="code-row-name">
-                        <span class="idx">01</span>LeetCode
-                    </span>
-
-                    <span class="code-row-handle mono">
-                        tulasiram_vutukuri
-                    </span>
-
-                </button>
-
-
-                <!-- CODECHEF -->
-                <button class="code-row" type="button" role="tab" aria-selected="false" data-platform="CodeChef" data-handle="tulasiramv_09" data-url="https://www.codechef.com/users/tulasiramv_09" data-solved="65" data-easy="28" data-medium="25" data-hard="12">
-
-                    <span class="code-row-name">
-                        <span class="idx">02</span>CodeChef
-                    </span>
-
-                    <span class="code-row-handle mono">
-                        tulasiramv_09
-                    </span>
-
-                </button>
-
-
-                <!-- HACKERRANK -->
-                <button class="code-row" type="button" role="tab" aria-selected="false" data-platform="HackerRank" data-handle="tulasiramv_09" data-url="https://www.hackerrank.com/profile/tulasiramv_09" data-solved="54" data-easy="25" data-medium="21" data-hard="8">
-
-                    <span class="code-row-name">
-                        <span class="idx">03</span>HackerRank
-                    </span>
-
-                    <span class="code-row-handle mono">
-                        tulasiramv_09
-                    </span>
-
-                </button>
-
-
-                <!-- GEEKSFORGEEKS -->
-                <button class="code-row" type="button" role="tab" aria-selected="false" data-platform="GeeksforGeeks" data-handle="tulasiramvutukuri09" data-url="https://www.geeksforgeeks.org/profile/tulasiramvutukuri09" data-solved="72" data-easy="31" data-medium="29" data-hard="12">
-
-                    <span class="code-row-name">
-                        <span class="idx">04</span>GeeksforGeeks
-                    </span>
-
-                    <span class="code-row-handle mono">
-                        tulasiramvutukuri09
-                    </span>
-
-                </button>
-
-            </div>
-
-
-            <!-- RIGHT: PROFILE DETAILS -->
-            <div class="code-detail">
-
-                <div class="code-detail-inner" data-code-detail>
-
-                    <span class="tag mono">Practice</span>
-
-                    <h3 data-detail-platform>LeetCode</h3>
-
-                    <span class="handle" data-detail-handle>
-                        tulasiram_vutukuri
-                    </span>
-
-
-                    <div class="code-detail-stats">
-
-                        <!-- SOLVED -->
-                        <div class="cds-item total">
-                            <b data-detail-solved>81</b>
-                            <span>Solved</span>
-                        </div>
-
-
-                        <!-- EASY -->
-                        <div class="cds-item">
-                            <b data-detail-easy style="color: #2e9b5b;">
-                                42
-                            </b>
-
-                            <span style="color: #2e9b5b;">
-                                Easy
-                            </span>
-                        </div>
-
-
-                        <!-- MEDIUM -->
-                        <div class="cds-item">
-                            <b data-detail-medium style="color: #d9a400;">
-                                32
-                            </b>
-
-                            <span style="color: #d9a400;">
-                                Medium
-                            </span>
-                        </div>
-
-
-                        <!-- HARD -->
-                        <div class="cds-item">
-                            <b data-detail-hard style="color: #d94a4a;">
-                                7
-                            </b>
-
-                            <span style="color: #d94a4a;">
-                                Hard
-                            </span>
-                        </div>
-
-                    </div>
-
-
-                    <a class="code-detail-visit" data-detail-link href="https://leetcode.com/u/tulasiram_vutukuri/" target="_blank" rel="noopener">
-                        View profile ↗
-                    </a>
-
-                </div>
-
-            </div>
-
+        <div class="code-icons">
+            <a class="social-icon code-icon" href="https://leetcode.com/u/tulasiram_vutukuri/" target="_blank" rel="noopener" aria-label="LeetCode" title="LeetCode">LC</a>
+            <a class="social-icon code-icon" href="https://www.codechef.com/users/tulasiramv_09" target="_blank" rel="noopener" aria-label="CodeChef" title="CodeChef">CC</a>
+            <a class="social-icon code-icon" href="https://www.hackerrank.com/profile/tulasiramv_09" target="_blank" rel="noopener" aria-label="HackerRank" title="HackerRank">HR</a>
+            <a class="social-icon code-icon" href="https://www.geeksforgeeks.org/profile/tulasiramvutukuri09" target="_blank" rel="noopener" aria-label="GeeksforGeeks" title="GeeksforGeeks">GfG</a>
         </div>
 
     </section>
 
-    <section id="certifications" class="wrap section">
+    <section id="certifications" class="wrap section" hidden>
         <div class="section-head">
             <span class="tag mono">(06)</span>
             <div>
@@ -3146,7 +3039,7 @@
         </div>
     </section>
 
-    <section id="achievements" class="wrap section">
+    <section id="achievements" class="wrap section" hidden>
         <div class="section-head">
             <span class="tag mono">(07)</span>
             <div>
